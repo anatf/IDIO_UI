@@ -1,0 +1,100 @@
+
+#invoices {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#invoices td, #invoices th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#invoices tr:nth-child(even){background-color: #f2f2f2;}
+
+#invoices tr:hover {background-color: #ddd;}
+
+#invoices th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+#transactions table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  #transactions th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  #transactions th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Hover Effect */
+  #transactions tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Striped Rows */
+  #transactions tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+
+
+.modal-table-header {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .modal-table-view li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .modal-table-view li:last-child {
+    border-bottom: none;
+  }
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    z-index: 1; /* Place the modal above the rest of the content */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
